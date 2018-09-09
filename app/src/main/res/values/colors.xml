@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#A90000</color>
+    <color name="colorPrimaryDark">#A90000</color>
+    <color name="colorAccent">#B71C1C</color>
+    <color name="primarybutton">#fc3535</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="standard_back">#202020</color>
+</resources>

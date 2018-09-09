@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">EasyAlert</string>
+
+    <string name="primary_button">!</string>
+    <string name="C1_button">\u0020 Mom</string>
+    <string name="C2_button">Dad \u0020</string>
+    <string name="U_button">Unlock Phone</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_start">StartActivity</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_message">activity_message</string>
+    <string name="sms_message"><![CDATA[ From : %1$s<br/>%2$s]]></string>
+    <string name="phone_numbers">Phone Numbers</string>
+    <string name="phone_number">Phone Number:</string>
+    <string name="message">Message:</string>
+    <string name="title_activity_bus">Map</string>
+</resources>

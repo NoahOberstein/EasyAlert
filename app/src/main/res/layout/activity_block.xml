@@ -1,0 +1,117 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#202020"
+    android:keepScreenOn="true"
+    tools:context="com.example.noahoberstein.easyalert.BlockActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView
+        android:id="@+id/TextBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:textColor="#ffffff"
+        android:textSize="50sp"/>
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="@string/primary_button"
+        android:textColor="#ffffff"
+        android:textSize="50sp" />
+
+
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/standard_back"
+        android:fitsSystemWindows="true">
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+        </LinearLayout>
+        <Button
+            android:id="@+id/primarybutton"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="3dp"
+            android:adjustViewBounds="true"
+                android:background="@drawable/primary_button"
+            android:fontFamily="sans-serif-smallcaps"
+            android:scaleType="centerInside"
+            android:text="@string/primary_button"
+                android:textColor="@color/primarybutton"
+                android:textSize="250sp"
+                android:textStyle="normal"
+            />
+        <EditText
+            android:id="@+id/unlock"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center|top"
+            android:gravity="center_horizontal"
+            android:background="@color/colorPrimaryDark"
+            android:fontFamily="sans-serif"
+            android:hint="Unlock Phone"
+            android:inputType="numberPassword"
+            android:ellipsize="start"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textColorHint="@android:color/white"
+            android:textSize="24sp"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:weightSum="2">
+        <Button
+            android:id="@+id/c1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom|start"
+            android:layout_weight="1"
+            android:background="@drawable/contact_bg"
+            android:fontFamily="sans-serif"
+                android:text="@string/C1_button"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:textStyle="normal"
+            />
+        <Button
+            android:id="@+id/c2"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom|end"
+            android:layout_weight="1"
+            android:background="@drawable/contact_bg"
+            android:fontFamily="sans-serif"
+                android:text="@string/C2_button"
+                android:textAlignment="textEnd"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:textStyle="normal"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>
